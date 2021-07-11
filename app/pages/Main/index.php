@@ -1,1 +1,1 @@
-<?=$this->component('hero')?>
+<?=$this->component('starter-animation')?>

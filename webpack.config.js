@@ -11,6 +11,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(frag|vert|glsl)$/,
+        use: [
+          { 
+            loader: 'glsl-shader-loader',
+            options: {}  
+          }
+        ]
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [
           {
